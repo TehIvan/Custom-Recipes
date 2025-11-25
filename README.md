@@ -110,7 +110,8 @@ Permission: `customrecipes.gui`
 ## Permissions
 
 - `customrecipes.*` - All permissions **(op)**
-- `customrecipes.list` - Browse custom recipes **(true)** - Available to all players
+- `customrecipes.list` - Browse custom recipes **(true)** - Allows viewing custom recipes list only available/unlocked recipes
+- `customrecipes.list` - Browse custom recipes **(op)** - Allows viewing ALL recipes 
 - `customrecipes.reload` - Reload configuration **(op)**
 - `customrecipes.gui` - Open admin GUI interface **(op)**
 - `customrecipes.manage` - Create, edit, and delete recipes **(op)**
@@ -158,7 +159,7 @@ Permission: `customrecipes.gui`
 ## Usage
 
 **For Players:**
-- Use **/cr** or **/cr list** to browse all available custom recipes
+- Use **/cr list** to browse all available custom recipes
 - Click on **any** recipe to view its crafting pattern
 
 **For Administrators:**
@@ -170,7 +171,7 @@ Permission: `customrecipes.gui`
 
 - **Minecraft Version:** 1.18.2 - 1.21.10
 - **Server Software:** Paper/Spigot/Purpur (or compatible fork)
-- **Java Version:** Java 17  +
+- **Java Version:** Java 17+
 
 ---
 
