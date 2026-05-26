@@ -2,14 +2,18 @@
 # CustomRecipes Configuration
 # ===========================
 # DO NOT EDIT THIS LINE
-config-version: 2
+config-version: 3
 # Author: hikarii
-# Version: 1.5.0
+# Version: 2.0.0
 # Create your own custom Crafting, Furnace, Anvil, and other recipes with tons of configuration option!
 #
 # For any help join discord: https://discord.gg/ChTjgTqw3T
 # For material names, see:
 # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+
+# Plugin language (en_US, ru_RU, de_DE)
+# Available languages are stored in /lang/ folder
+language: en_US
 
 # Enable/disable debug mode
 debug: false

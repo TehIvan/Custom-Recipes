@@ -138,8 +138,8 @@ public final class CustomRecipes extends JavaPlugin {
 
     private void registerCommands() {
         CustomRecipesCommand commandExecutor = new CustomRecipesCommand(this);
-        getCommand("customrecipes").setExecutor(commandExecutor);
-        getCommand("customrecipes").setTabCompleter(commandExecutor);
+        getCommand("recipes").setExecutor(commandExecutor);
+        getCommand("recipes").setTabCompleter(commandExecutor);
     }
 
     private void registerListeners() {

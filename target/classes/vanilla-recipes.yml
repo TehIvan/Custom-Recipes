@@ -1,7 +1,7 @@
 # Vanilla Minecraft Recipes
-# Version: 1.21.10
+# Version: 1.18.2 - 1.21.10
 # DO NOT EDIT THIS LINE
-vanilla-recipes-version: 2
+vanilla-recipes-version: 3
 # Format:
 # recipe_key:
 #   name: "Display Name"
@@ -2058,8 +2058,8 @@ recipes:
     amount: 1
     type: SHAPED
     pattern:
-      - "TURTLE_SCUTE TURTLE_SCUTE TURTLE_SCUTE"
-      - "TURTLE_SCUTE AIR TURTLE_SCUTE"
+      - "TURTLE_SCUTE|SCUTE TURTLE_SCUTE|SCUTE TURTLE_SCUTE|SCUTE"
+      - "TURTLE_SCUTE|SCUTE AIR TURTLE_SCUTE|SCUTE"
       - "AIR AIR AIR"
     category: COMBAT
     station: CRAFTING_TABLE
@@ -2587,6 +2587,79 @@ recipes:
       - "STICK STICK STICK"
       - "STICK LEATHER STICK"
       - "STICK STICK STICK"
+    category: DECORATIONS
+    station: CRAFTING_TABLE
+
+  # Banner Patterns
+  creeper_banner_pattern:
+    name: "Creeper Banner Pattern"
+    material: CREEPER_BANNER_PATTERN
+    amount: 1
+    type: SHAPELESS
+    pattern:
+      - "PAPER CREEPER_HEAD AIR"
+      - "AIR AIR AIR"
+      - "AIR AIR AIR"
+    category: DECORATIONS
+    station: CRAFTING_TABLE
+
+  skull_banner_pattern:
+    name: "Skull Banner Pattern"
+    material: SKULL_BANNER_PATTERN
+    amount: 1
+    type: SHAPELESS
+    pattern:
+      - "PAPER WITHER_SKELETON_SKULL AIR"
+      - "AIR AIR AIR"
+      - "AIR AIR AIR"
+    category: DECORATIONS
+    station: CRAFTING_TABLE
+
+  flower_banner_pattern:
+    name: "Flower Banner Pattern"
+    material: FLOWER_BANNER_PATTERN
+    amount: 1
+    type: SHAPELESS
+    pattern:
+      - "PAPER OXEYE_DAISY AIR"
+      - "AIR AIR AIR"
+      - "AIR AIR AIR"
+    category: DECORATIONS
+    station: CRAFTING_TABLE
+
+  mojang_banner_pattern:
+    name: "Mojang Banner Pattern"
+    material: MOJANG_BANNER_PATTERN
+    amount: 1
+    type: SHAPELESS
+    pattern:
+      - "PAPER ENCHANTED_GOLDEN_APPLE AIR"
+      - "AIR AIR AIR"
+      - "AIR AIR AIR"
+    category: DECORATIONS
+    station: CRAFTING_TABLE
+
+  field_masoned_banner_pattern:
+    name: "Field Masoned Banner Pattern"
+    material: FIELD_MASONED_BANNER_PATTERN
+    amount: 1
+    type: SHAPELESS
+    pattern:
+      - "PAPER BRICKS AIR"
+      - "AIR AIR AIR"
+      - "AIR AIR AIR"
+    category: DECORATIONS
+    station: CRAFTING_TABLE
+
+  bordure_indented_banner_pattern:
+    name: "Bordure Indented Banner Pattern"
+    material: BORDURE_INDENTED_BANNER_PATTERN
+    amount: 1
+    type: SHAPELESS
+    pattern:
+      - "PAPER VINE AIR"
+      - "AIR AIR AIR"
+      - "AIR AIR AIR"
     category: DECORATIONS
     station: CRAFTING_TABLE
 
@@ -3509,6 +3582,115 @@ recipes:
     pattern:
       - "BAMBOO_PLANKS AIR BAMBOO_PLANKS"
       - "BAMBOO_PLANKS BAMBOO_PLANKS BAMBOO_PLANKS"
+      - "AIR AIR AIR"
+    category: TRANSPORTATION
+    station: CRAFTING_TABLE
+
+  # Boats with Chest (1.19+)
+  oak_chest_boat:
+    name: "Oak Boat with Chest"
+    material: OAK_CHEST_BOAT
+    amount: 1
+    type: SHAPELESS
+    pattern:
+      - "OAK_BOAT CHEST AIR"
+      - "AIR AIR AIR"
+      - "AIR AIR AIR"
+    category: TRANSPORTATION
+    station: CRAFTING_TABLE
+
+  spruce_chest_boat:
+    name: "Spruce Boat with Chest"
+    material: SPRUCE_CHEST_BOAT
+    amount: 1
+    type: SHAPELESS
+    pattern:
+      - "SPRUCE_BOAT CHEST AIR"
+      - "AIR AIR AIR"
+      - "AIR AIR AIR"
+    category: TRANSPORTATION
+    station: CRAFTING_TABLE
+
+  birch_chest_boat:
+    name: "Birch Boat with Chest"
+    material: BIRCH_CHEST_BOAT
+    amount: 1
+    type: SHAPELESS
+    pattern:
+      - "BIRCH_BOAT CHEST AIR"
+      - "AIR AIR AIR"
+      - "AIR AIR AIR"
+    category: TRANSPORTATION
+    station: CRAFTING_TABLE
+
+  jungle_chest_boat:
+    name: "Jungle Boat with Chest"
+    material: JUNGLE_CHEST_BOAT
+    amount: 1
+    type: SHAPELESS
+    pattern:
+      - "JUNGLE_BOAT CHEST AIR"
+      - "AIR AIR AIR"
+      - "AIR AIR AIR"
+    category: TRANSPORTATION
+    station: CRAFTING_TABLE
+
+  acacia_chest_boat:
+    name: "Acacia Boat with Chest"
+    material: ACACIA_CHEST_BOAT
+    amount: 1
+    type: SHAPELESS
+    pattern:
+      - "ACACIA_BOAT CHEST AIR"
+      - "AIR AIR AIR"
+      - "AIR AIR AIR"
+    category: TRANSPORTATION
+    station: CRAFTING_TABLE
+
+  dark_oak_chest_boat:
+    name: "Dark Oak Boat with Chest"
+    material: DARK_OAK_CHEST_BOAT
+    amount: 1
+    type: SHAPELESS
+    pattern:
+      - "DARK_OAK_BOAT CHEST AIR"
+      - "AIR AIR AIR"
+      - "AIR AIR AIR"
+    category: TRANSPORTATION
+    station: CRAFTING_TABLE
+
+  mangrove_chest_boat:
+    name: "Mangrove Boat with Chest"
+    material: MANGROVE_CHEST_BOAT
+    amount: 1
+    type: SHAPELESS
+    pattern:
+      - "MANGROVE_BOAT CHEST AIR"
+      - "AIR AIR AIR"
+      - "AIR AIR AIR"
+    category: TRANSPORTATION
+    station: CRAFTING_TABLE
+
+  cherry_chest_boat:
+    name: "Cherry Boat with Chest"
+    material: CHERRY_CHEST_BOAT
+    amount: 1
+    type: SHAPELESS
+    pattern:
+      - "CHERRY_BOAT CHEST AIR"
+      - "AIR AIR AIR"
+      - "AIR AIR AIR"
+    category: TRANSPORTATION
+    station: CRAFTING_TABLE
+
+  bamboo_chest_raft:
+    name: "Bamboo Raft with Chest"
+    material: BAMBOO_CHEST_RAFT
+    amount: 1
+    type: SHAPELESS
+    pattern:
+      - "BAMBOO_RAFT CHEST AIR"
+      - "AIR AIR AIR"
       - "AIR AIR AIR"
     category: TRANSPORTATION
     station: CRAFTING_TABLE
@@ -9579,251 +9761,180 @@ recipes:
     category: MISC
     station: CRAFTING_TABLE
 
-  # === INGOTS FROM NUGGETS ===
+  # === INGOTS (with variants) ===
 
-  iron_ingot_from_nuggets:
+  iron_ingot:
     name: "Iron Ingot"
     material: IRON_INGOT
     amount: 1
     type: SHAPED
     pattern:
-      - "IRON_NUGGET IRON_NUGGET IRON_NUGGET"
-      - "IRON_NUGGET IRON_NUGGET IRON_NUGGET"
-      - "IRON_NUGGET IRON_NUGGET IRON_NUGGET"
+      - "IRON_NUGGET|IRON_BLOCK IRON_NUGGET|AIR IRON_NUGGET|AIR"
+      - "IRON_NUGGET|AIR IRON_NUGGET|AIR IRON_NUGGET|AIR"
+      - "IRON_NUGGET|AIR IRON_NUGGET|AIR IRON_NUGGET|AIR"
     category: MISC
     station: CRAFTING_TABLE
+    variant-results:
+      0: # Из самородков
+        material: IRON_INGOT
+        amount: 1
+      1: # Из блока
+        material: IRON_INGOT
+        amount: 9
 
-  gold_ingot_from_nuggets:
+  gold_ingot:
     name: "Gold Ingot"
     material: GOLD_INGOT
     amount: 1
     type: SHAPED
     pattern:
-      - "GOLD_NUGGET GOLD_NUGGET GOLD_NUGGET"
-      - "GOLD_NUGGET GOLD_NUGGET GOLD_NUGGET"
-      - "GOLD_NUGGET GOLD_NUGGET GOLD_NUGGET"
+      - "GOLD_NUGGET|GOLD_BLOCK GOLD_NUGGET|AIR GOLD_NUGGET|AIR"
+      - "GOLD_NUGGET|AIR GOLD_NUGGET|AIR GOLD_NUGGET|AIR"
+      - "GOLD_NUGGET|AIR GOLD_NUGGET|AIR GOLD_NUGGET|AIR"
     category: MISC
     station: CRAFTING_TABLE
+    variant-results:
+      0: # Из самородков
+        material: GOLD_INGOT
+        amount: 1
+      1: # Из блока
+        material: GOLD_INGOT
+        amount: 9
 
-  # === ITEMS FROM BLOCKS ===
+  # === ITEMS/BLOCKS (with variants) ===
 
-  iron_ingot_from_block:
-    name: "Iron Ingot"
-    material: IRON_INGOT
-    amount: 9
-    type: SHAPELESS
-    pattern:
-      - "AIR AIR AIR"
-      - "AIR IRON_BLOCK AIR"
-      - "AIR AIR AIR"
-    category: MISC
-    station: CRAFTING_TABLE
-
-  gold_ingot_from_block:
-    name: "Gold Ingot"
-    material: GOLD_INGOT
-    amount: 9
-    type: SHAPELESS
-    pattern:
-      - "AIR AIR AIR"
-      - "AIR GOLD_BLOCK AIR"
-      - "AIR AIR AIR"
-    category: MISC
-    station: CRAFTING_TABLE
-
-  diamond_from_block:
+  diamond:
     name: "Diamond"
     material: DIAMOND
     amount: 9
-    type: SHAPELESS
+    type: SHAPED
     pattern:
-      - "AIR AIR AIR"
-      - "AIR DIAMOND_BLOCK AIR"
-      - "AIR AIR AIR"
+      - "DIAMOND|DIAMOND_BLOCK DIAMOND|AIR DIAMOND|AIR"
+      - "DIAMOND|AIR DIAMOND|AIR DIAMOND|AIR"
+      - "DIAMOND|AIR DIAMOND|AIR DIAMOND|AIR"
     category: MISC
     station: CRAFTING_TABLE
+    variant-results:
+      0: # Крафт блока
+        material: DIAMOND_BLOCK
+        amount: 1
+      1: # Разбор блока
+        material: DIAMOND
+        amount: 9
 
-  emerald_from_block:
+  emerald:
     name: "Emerald"
     material: EMERALD
     amount: 9
-    type: SHAPELESS
+    type: SHAPED
     pattern:
-      - "AIR AIR AIR"
-      - "AIR EMERALD_BLOCK AIR"
-      - "AIR AIR AIR"
+      - "EMERALD|EMERALD_BLOCK EMERALD|AIR EMERALD|AIR"
+      - "EMERALD|AIR EMERALD|AIR EMERALD|AIR"
+      - "EMERALD|AIR EMERALD|AIR EMERALD|AIR"
     category: MISC
     station: CRAFTING_TABLE
+    variant-results:
+      0: # Крафт блока
+        material: EMERALD_BLOCK
+        amount: 1
+      1: # Разбор блока
+        material: EMERALD
+        amount: 9
 
-  lapis_lazuli_from_block:
+  lapis_lazuli:
     name: "Lapis Lazuli"
     material: LAPIS_LAZULI
     amount: 9
-    type: SHAPELESS
+    type: SHAPED
     pattern:
-      - "AIR AIR AIR"
-      - "AIR LAPIS_BLOCK AIR"
-      - "AIR AIR AIR"
+      - "LAPIS_LAZULI|LAPIS_BLOCK LAPIS_LAZULI|AIR LAPIS_LAZULI|AIR"
+      - "LAPIS_LAZULI|AIR LAPIS_LAZULI|AIR LAPIS_LAZULI|AIR"
+      - "LAPIS_LAZULI|AIR LAPIS_LAZULI|AIR LAPIS_LAZULI|AIR"
     category: MISC
     station: CRAFTING_TABLE
+    variant-results:
+      0: # Крафт блока
+        material: LAPIS_BLOCK
+        amount: 1
+      1: # Разбор блока
+        material: LAPIS_LAZULI
+        amount: 9
 
-  coal_from_block:
+  coal:
     name: "Coal"
     material: COAL
     amount: 9
-    type: SHAPELESS
+    type: SHAPED
     pattern:
-      - "AIR AIR AIR"
-      - "AIR COAL_BLOCK AIR"
-      - "AIR AIR AIR"
+      - "COAL|COAL_BLOCK COAL|AIR COAL|AIR"
+      - "COAL|AIR COAL|AIR COAL|AIR"
+      - "COAL|AIR COAL|AIR COAL|AIR"
     category: MISC
     station: CRAFTING_TABLE
+    variant-results:
+      0: # Крафт блока
+        material: COAL_BLOCK
+        amount: 1
+      1: # Разбор блока
+        material: COAL
+        amount: 9
 
-  redstone_from_block:
+  redstone:
     name: "Redstone"
     material: REDSTONE
     amount: 9
-    type: SHAPELESS
+    type: SHAPED
     pattern:
-      - "AIR AIR AIR"
-      - "AIR REDSTONE_BLOCK AIR"
-      - "AIR AIR AIR"
+      - "REDSTONE|REDSTONE_BLOCK REDSTONE|AIR REDSTONE|AIR"
+      - "REDSTONE|AIR REDSTONE|AIR REDSTONE|AIR"
+      - "REDSTONE|AIR REDSTONE|AIR REDSTONE|AIR"
     category: MISC
     station: CRAFTING_TABLE
+    variant-results:
+      0: # Крафт блока
+        material: REDSTONE_BLOCK
+        amount: 1
+      1: # Разбор блока
+        material: REDSTONE
+        amount: 9
 
-  quartz_from_block:
-    name: "Quartz"
+  quartz:
+    name: "Nether Quartz"
     material: QUARTZ
     amount: 4
-    type: SHAPELESS
+    type: SHAPED
     pattern:
-      - "AIR AIR AIR"
-      - "AIR QUARTZ_BLOCK AIR"
+      - "QUARTZ|QUARTZ_BLOCK QUARTZ|AIR AIR"
+      - "QUARTZ|AIR QUARTZ|AIR AIR"
       - "AIR AIR AIR"
     category: MISC
     station: CRAFTING_TABLE
+    variant-results:
+      0: # Крафт блока
+        material: QUARTZ_BLOCK
+        amount: 1
+      1: # Разбор блока
+        material: QUARTZ
+        amount: 4
 
-  wheat_from_hay:
+  wheat:
     name: "Wheat"
     material: WHEAT
     amount: 9
-    type: SHAPELESS
+    type: SHAPED
     pattern:
-      - "AIR AIR AIR"
-      - "AIR HAY_BLOCK AIR"
-      - "AIR AIR AIR"
+      - "WHEAT|HAY_BLOCK WHEAT|AIR WHEAT|AIR"
+      - "WHEAT|AIR WHEAT|AIR WHEAT|AIR"
+      - "WHEAT|AIR WHEAT|AIR WHEAT|AIR"
     category: MISC
     station: CRAFTING_TABLE
-
-  # === BOATS WITH CHESTS ===
-
-  oak_chest_boat:
-    name: "Oak Boat with Chest"
-    material: OAK_CHEST_BOAT
-    amount: 1
-    type: SHAPELESS
-    pattern:
-      - "CHEST OAK_BOAT AIR"
-      - "AIR AIR AIR"
-      - "AIR AIR AIR"
-    category: TRANSPORTATION
-    station: CRAFTING_TABLE
-
-  spruce_chest_boat:
-    name: "Spruce Boat with Chest"
-    material: SPRUCE_CHEST_BOAT
-    amount: 1
-    type: SHAPELESS
-    pattern:
-      - "CHEST SPRUCE_BOAT AIR"
-      - "AIR AIR AIR"
-      - "AIR AIR AIR"
-    category: TRANSPORTATION
-    station: CRAFTING_TABLE
-
-  birch_chest_boat:
-    name: "Birch Boat with Chest"
-    material: BIRCH_CHEST_BOAT
-    amount: 1
-    type: SHAPELESS
-    pattern:
-      - "CHEST BIRCH_BOAT AIR"
-      - "AIR AIR AIR"
-      - "AIR AIR AIR"
-    category: TRANSPORTATION
-    station: CRAFTING_TABLE
-
-  jungle_chest_boat:
-    name: "Jungle Boat with Chest"
-    material: JUNGLE_CHEST_BOAT
-    amount: 1
-    type: SHAPELESS
-    pattern:
-      - "CHEST JUNGLE_BOAT AIR"
-      - "AIR AIR AIR"
-      - "AIR AIR AIR"
-    category: TRANSPORTATION
-    station: CRAFTING_TABLE
-
-  acacia_chest_boat:
-    name: "Acacia Boat with Chest"
-    material: ACACIA_CHEST_BOAT
-    amount: 1
-    type: SHAPELESS
-    pattern:
-      - "CHEST ACACIA_BOAT AIR"
-      - "AIR AIR AIR"
-      - "AIR AIR AIR"
-    category: TRANSPORTATION
-    station: CRAFTING_TABLE
-
-  dark_oak_chest_boat:
-    name: "Dark Oak Boat with Chest"
-    material: DARK_OAK_CHEST_BOAT
-    amount: 1
-    type: SHAPELESS
-    pattern:
-      - "CHEST DARK_OAK_BOAT AIR"
-      - "AIR AIR AIR"
-      - "AIR AIR AIR"
-    category: TRANSPORTATION
-    station: CRAFTING_TABLE
-
-  mangrove_chest_boat:
-    name: "Mangrove Boat with Chest"
-    material: MANGROVE_CHEST_BOAT
-    amount: 1
-    type: SHAPELESS
-    pattern:
-      - "CHEST MANGROVE_BOAT AIR"
-      - "AIR AIR AIR"
-      - "AIR AIR AIR"
-    category: TRANSPORTATION
-    station: CRAFTING_TABLE
-
-  cherry_chest_boat:
-    name: "Cherry Boat with Chest"
-    material: CHERRY_CHEST_BOAT
-    amount: 1
-    type: SHAPELESS
-    pattern:
-      - "CHEST CHERRY_BOAT AIR"
-      - "AIR AIR AIR"
-      - "AIR AIR AIR"
-    category: TRANSPORTATION
-    station: CRAFTING_TABLE
-
-  bamboo_chest_raft:
-    name: "Bamboo Raft with Chest"
-    material: BAMBOO_CHEST_RAFT
-    amount: 1
-    type: SHAPELESS
-    pattern:
-      - "CHEST BAMBOO_RAFT AIR"
-      - "AIR AIR AIR"
-      - "AIR AIR AIR"
-    category: TRANSPORTATION
-    station: CRAFTING_TABLE
+    variant-results:
+      0: # Крафт снопа
+        material: HAY_BLOCK
+        amount: 1
+      1: # Разбор снопа
+        material: WHEAT
+        amount: 9
 
   # === MISC ===
 

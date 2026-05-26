@@ -108,7 +108,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - HIDE_UNBREAKABLE - Hide unbreakable tag
   - HIDE_DESTROYS - Hide "Can Destroy" block list
   - HIDE_PLACED_ON - Hide "Can Place On" block list
-  - HIDE_POTION_EFFECTS - Hide potion effect tooltips
+
   - HIDE_DYE - Hide dye color on leather armor
   - HIDE_ARMOR_TRIM - Hide armor trim patterns
   - HIDE_ADDITIONAL_TOOLTIP - Hide additional tooltip information

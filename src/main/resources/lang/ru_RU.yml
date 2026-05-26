@@ -1114,8 +1114,6 @@ flags_selector:
     hide_destroys_desc: "Скрывает список 'Может разрушить' из подсказки"
     hide_placed_on: "Скрыть 'Можно поставить на'"
     hide_placed_on_desc: "Скрывает список 'Можно поставить на' из подсказки"
-    hide_potion_effects: "Скрыть эффекты зелий"
-    hide_potion_effects_desc: "Скрывает эффекты зелий из подсказки"
     hide_dye: "Скрыть цвет краски"
     hide_dye_desc: "Скрывает текст 'Окрашено' из подсказки"
     hide_armor_trim: "Скрыть отделку брони"

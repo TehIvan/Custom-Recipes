@@ -1,7 +1,7 @@
 name: CustomRecipes
-version: '1.5.0'
+version: '2.0.0'
 main: org.hikarii.customrecipes.CustomRecipes
-api-version: '1.21'
+api-version: '1.21.11'
 author: hikarii
 description: Create your own custom Crafting, Furnace, Anvil, and other recipes with tons of configuration option
 website:
@@ -12,10 +12,10 @@ website:
   https://github.com/hikarii-dev
 
 commands:
-  customrecipes:
+  recipes:
     description: Main CustomRecipes command
-    usage: /customrecipes <list|help|reload|gui>
-    aliases: [cr, crecipes, customrecipe]
+    usage: /recipes <list|help|reload|gui>
+    aliases: [recipe]
 
 permissions:
   customrecipes.*:
@@ -26,6 +26,8 @@ permissions:
       customrecipes.gui: true
       customrecipes.manage: true
       customrecipes.list: true
+      customrecipes.list.all: true
+      customrecipes.help: true
       customrecipes.update.notify: true
 
   customrecipes.reload:
@@ -33,7 +35,7 @@ permissions:
     default: op
 
   customrecipes.gui:
-    description: Allows opening the recipe management GUI (admin only)
+    description: Allows opening the recipe creation GUI (admin only)
     default: op
 
   customrecipes.manage:
@@ -41,7 +43,15 @@ permissions:
     default: op
 
   customrecipes.list:
-    description: Allows viewing all custom recipes
+    description: Allows viewing custom recipes list
+    default: true
+
+  customrecipes.list.all:
+    description: Allows viewing ALL recipes (without this, only available/unlocked recipes shown)
+    default: op
+
+  customrecipes.help:
+    description: Allows using /cr help command
     default: true
 
   customrecipes.update.notify:

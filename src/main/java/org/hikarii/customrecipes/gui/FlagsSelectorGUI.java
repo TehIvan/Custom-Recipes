@@ -43,8 +43,6 @@ public class FlagsSelectorGUI implements Listener {
         ALL_FLAGS.add(new FlagInfo(ItemFlag.HIDE_DESTROYS, "hide_destroys", null));
         ALL_FLAGS.add(new FlagInfo(ItemFlag.HIDE_PLACED_ON, "hide_placed_on", null));
 
-        ALL_FLAGS.add(new FlagInfo(ItemFlag.HIDE_POTION_EFFECTS, "hide_potion_effects", null));
-
         try {
             ItemFlag hideDye = ItemFlag.valueOf("HIDE_DYE");
             ALL_FLAGS.add(new FlagInfo(hideDye, "hide_dye", null));
@@ -117,16 +115,7 @@ public class FlagsSelectorGUI implements Listener {
             if (info.minVersion != null && versionManager.isBelow(info.minVersion)) {
                 continue;
             }
-            
-            if (info.key.equals("hide_additional_tooltip") &&
-                available.stream().anyMatch(f -> f.key.equals("hide_potion_effects"))) {
-                
-                if (versionManager.isAtLeast(VersionManager.MinecraftVersion.v1_20)) {
-                    available.removeIf(f -> f.key.equals("hide_potion_effects"));
-                    available.add(info);
-                }
-                continue;
-            }
+
             available.add(info);
         }
         return available;

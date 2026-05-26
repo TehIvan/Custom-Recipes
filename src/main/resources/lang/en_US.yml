@@ -1114,8 +1114,6 @@ flags_selector:
     hide_destroys_desc: "Hides 'Can Destroy' list from tooltip"
     hide_placed_on: "Hide Can Place On"
     hide_placed_on_desc: "Hides 'Can Place On' list from tooltip"
-    hide_potion_effects: "Hide Potion Effects"
-    hide_potion_effects_desc: "Hides potion effects from tooltip"
     hide_dye: "Hide Dye Color"
     hide_dye_desc: "Hides 'Dyed' text from tooltip"
     hide_armor_trim: "Hide Armor Trim"

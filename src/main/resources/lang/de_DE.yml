@@ -1105,8 +1105,6 @@ flags_selector:
     hide_destroys_desc: "Versteckt 'Kann zerstören' Liste aus dem Tooltip"
     hide_placed_on: "Platzierbar auf verstecken"
     hide_placed_on_desc: "Versteckt 'Platzierbar auf' Liste aus dem Tooltip"
-    hide_potion_effects: "Trankeffekte verstecken"
-    hide_potion_effects_desc: "Versteckt Trankeffekte aus dem Tooltip"
     hide_dye: "Farbe verstecken"
     hide_dye_desc: "Versteckt 'Gefärbt' Text aus dem Tooltip"
     hide_armor_trim: "Rüstungsverzierung verstecken"
