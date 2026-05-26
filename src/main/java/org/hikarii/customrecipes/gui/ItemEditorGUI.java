@@ -15,6 +15,7 @@ import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.inventory.meta.components.CustomModelDataComponent;
 import org.bukkit.persistence.PersistentDataContainer;
 import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.enchantments.Enchantment;
@@ -47,7 +48,7 @@ public class ItemEditorGUI implements Listener {
     private Consumer<List<ItemStack>> onCompleteVariants;
     private String customName;
     private List<String> customLore;
-    private Integer customModelData;
+    private String customModelData;
     private Map<String, String> customNBT;
     public Map<Enchantment, Integer> customEnchantments;
     public Set<ItemFlag> customFlags;
@@ -104,7 +105,7 @@ public class ItemEditorGUI implements Listener {
                 }
             }
             if (meta.hasCustomModelData()) {
-                customModelData = meta.getCustomModelData();
+                customModelData = meta.getCustomModelDataComponent().getStrings().get(0);
             }
             if (meta.hasEnchants()) {
                 customEnchantments.putAll(meta.getEnchants());
@@ -210,7 +211,13 @@ public class ItemEditorGUI implements Listener {
             }
 
             if (customModelData != null) {
-                meta.setCustomModelData(customModelData);
+                CustomModelDataComponent component = meta.getCustomModelDataComponent();
+
+                component.setStrings(List.of(customModelData));
+
+                meta.setCustomModelDataComponent(
+                        component
+                );
             }
 
             if (item.getType() == Material.ENCHANTED_BOOK &&
@@ -647,7 +654,7 @@ public class ItemEditorGUI implements Listener {
             player.closeInventory();
             String savedName = customName;
             List<String> savedLore = new ArrayList<>(customLore);
-            Integer savedModelData = customModelData;
+            String savedModelData = customModelData;
             Map<String, String> savedNBT = new HashMap<>(customNBT);
             Map<Enchantment, Integer> savedEnchants = new HashMap<>(customEnchantments);
             boolean savedHide = hideEnchantments;
@@ -687,7 +694,7 @@ public class ItemEditorGUI implements Listener {
             player.closeInventory();
             String savedName = customName;
             List<String> savedLore = new ArrayList<>(customLore);
-            Integer savedModelData = customModelData;
+            String savedModelData = customModelData;
             Map<String, String> savedNBT = new HashMap<>(customNBT);
             Map<Enchantment, Integer> savedEnchants = new HashMap<>(customEnchantments);
             Set<ItemFlag> savedFlags = new HashSet<>(customFlags);
@@ -732,7 +739,7 @@ public class ItemEditorGUI implements Listener {
             player.closeInventory();
             String savedName = customName;
             List<String> savedLore = new ArrayList<>(customLore);
-            Integer savedModelData = customModelData;
+            String savedModelData = customModelData;
             Map<String, String> savedNBT = new HashMap<>(customNBT);
             Map<Enchantment, Integer> savedEnchants = new HashMap<>(customEnchantments);
             Set<ItemFlag> savedFlags = new HashSet<>(customFlags);
@@ -874,7 +881,7 @@ public class ItemEditorGUI implements Listener {
                 }
             }
             if (meta.hasCustomModelData()) {
-                customModelData = meta.getCustomModelData();
+                customModelData = meta.getCustomModelDataComponent().getStrings().get(0);
             }
             if (meta.hasEnchants()) {
                 customEnchantments.putAll(meta.getEnchants());
@@ -931,7 +938,13 @@ public class ItemEditorGUI implements Listener {
             }
 
             if (customModelData != null) {
-                meta.setCustomModelData(customModelData);
+                CustomModelDataComponent component = meta.getCustomModelDataComponent();
+
+                component.setStrings(List.of(customModelData));
+
+                meta.setCustomModelDataComponent(
+                        component
+                );
             }
 
             if (item.getType() == Material.ENCHANTED_BOOK &&
@@ -1045,21 +1058,14 @@ public class ItemEditorGUI implements Listener {
                         editor.open();
                     });
                 } else {
-                    try {
-                        int modelData = Integer.parseInt(message);
-                        editor.customModelData = modelData;
+                        editor.customModelData = message;
                         waitingForInput.remove(chatPlayer.getUniqueId());
                         currentMode = EditMode.NONE;
                         Bukkit.getScheduler().runTask(plugin, () -> {
-                            MessageUtil.sendAdminSuccess(chatPlayer, lang.getMessage("item_editor_advanced.set_custom_model_data", Map.of("value", String.valueOf(modelData))));
+                            MessageUtil.sendAdminSuccess(chatPlayer, lang.getMessage("item_editor_advanced.set_custom_model_data", Map.of("value", String.valueOf(customModelData))));
                             editor.updateInventory();
                             editor.open();
                         });
-                    } catch (NumberFormatException e) {
-                        Bukkit.getScheduler().runTask(plugin, () -> {
-                            MessageUtil.sendError(chatPlayer, lang.getMessage("item_editor_advanced.invalid_number"));
-                        });
-                    }
                 }
             }
             case NBT_KEY -> {
@@ -1101,7 +1107,7 @@ public class ItemEditorGUI implements Listener {
         return customLore;
     }
 
-    public Integer getCustomModelData() {
+    public String getCustomModelData() {
         return customModelData;
     }
 
